@@ -69,6 +69,16 @@ align-items: center;
     letter-spacing: 0 .5px;
     font-size: 0.9rem;
 }
-.menu li a:hover{
+.menu li a:hover,
+.menu li a.active{
     color: var(-micolor-);
+}
+.right-nav a{
+   width: 40px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   background-color: var(--main-light-color);
 }
