@@ -73,6 +73,11 @@ align-items: center;
 .menu li a.active{
     color: var(-micolor-);
 }
+.right-nav{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
 .right-nav a{
    width: 40px;
    height: 40px;
@@ -81,4 +86,41 @@ align-items: center;
    align-items: center;
    border-radius: 50%;
    background-color: var(--main-light-color);
+}
+.right-nav a span{
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: var(--main-color);
+    font-weight: 500;
+    font-size: 0.6rem;
+}
+#main-banner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main-banner-box{
+    width: 100%;
+    height: 100%;
+}
+.main-banner-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.main-banner-text{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(-10%,  -50% );
 }
